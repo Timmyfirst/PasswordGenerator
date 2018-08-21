@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Générateur de mots de passe</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <section class="centrale">
+    <center>
+    <div>
+      <!-- champ dans lequel on récupère la valeur à convertir -->
+      <input type="checkbox" name="chiffre" id="chiffre" value="chi"> Chiffres
+      <input type="checkbox" name="carna" id="carna" value="cna"> Caractères non alphabétiques (ex: !,?,#)<br>
+    </div>
+    <br>
+    <div>
+      <!-- champ dans lequel on récupère la valeur à convertir -->
+      <label for="nb">Choisissez le nombre de caractères (min 6) :</label>
+      <input type="text" name="nb" id="nb_car" class="nb_input" /><br><br>
+      <!-- bouton qui actionne la fonction javascript -->
+      <input type="submit" value="Générer" onclick="generator('chiffre','carna')">
+    </div>
+    </center>
+  </section>
+  <section class="result">
+  <center>
+    <label for="result">Résultat :</label>
+    <!-- champ dans lequel on récupère le résultat convertit -->
+    <input type="text" name="result" id="result" class="result_input" />
+  </center>
+  </section>
+  
+</body>
+</html>
