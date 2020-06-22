@@ -3,7 +3,7 @@ let assert = require('assert');
 
 describe('Verification Functions', function () {
   describe('VerifyWholeNatural', function () {
-    it('should return true if it'''s a whole natural number ', function () {
+    it('should return true if it is a whole natural number ', function () {
       assert.equal(true, generator.VerifyWholeNatural(7));
     });
     it('should return false if it is not a whole natural number ', function () {
