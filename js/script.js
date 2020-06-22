@@ -77,4 +77,4 @@ generator.VerifyWholeNatural = function(value){
   }
 }
 
-module.exports = convert;
+module.exports = generator;

@@ -1,4 +1,4 @@
-let generator = require('../js/script.js')
+let generator = require('../js/script.js');
 let assert = require('assert');
 
 describe('Verification Functions', function () {
