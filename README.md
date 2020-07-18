@@ -2,7 +2,7 @@
 
 Password Generator is a webtool whose provide passwords. Just needed to give criteria and lenght.
 
-It's a simple html webpage with a javascript algorithm.
+It's a simple html webpage with a javascript's algorithm.
 
 ## Install
 
