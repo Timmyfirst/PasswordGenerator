@@ -23,6 +23,12 @@ generator.main = function(){
 	}
 }
 
+/**
+ * For know is it's a natural number.
+ *
+ * @param {int, bool, bool} An value that supposed to be a positive int.
+ * @return {string} The result of the test.
+ */
 generator.Generate = function(nb_car, b_chi, b_crn){
 	var result="";
 
