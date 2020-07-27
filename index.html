@@ -55,20 +55,19 @@
         <center>
           <h1>Générateur de mot de passe en ligne - Sans inscription</h1>
         </center>
-        <center>
-          <div class="parameters">
-            <p>Options :</p>
-            <ul>
-              <li><input type="checkbox" name="chiffre" id="chiffres" value="chi"> Chiffres</li>
-              <li><input type="checkbox" name="carna" id="carnas" value="cna"> Caractères non alphabétiques (ex: !,?,#)<br></li>
-              <li><label for="nb">Choisissez le nombre de caractères (min 6) :</label>
-              <input type="text" name="nb" id="nb_car" class="nb_input" /><br><br></li>
-            </ul>
-            <div>
-              <input type="submit" value="Générer" onclick="generator.main()">
-            </div>
+        <div class="parameters">
+          <p>Options :</p>
+          <ul>
+            <li><input type="checkbox" name="chiffre" id="chiffres" value="chi"> Chiffres</li>
+            <li><input type="checkbox" name="carna" id="carnas" value="cna"> Caractères non alphabétiques (ex: !,?,#)<br></li>
+            <li><input type="text" name="nb" id="nb_car" class="nb_input" /><label for="nb"> Nombre de caractères (min 6)</label>
+            </li>
+          </ul>
+          <br><br>
+          <div id="div_btn">
+            <input type="submit" id="btn_generate" value="Générer" onclick="generator.main()">
           </div>
-        </center>
+        </div>
       </section>
       <section class="result">
         <center>

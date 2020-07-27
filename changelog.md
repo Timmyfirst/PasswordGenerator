@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## v1.1.0
-- Improve section
+- Improve SEO
 - Improve UI
 
 ## v1.0.0
