@@ -1,7 +1,7 @@
 let generator = {};
 
 /**
- * For generate the password.
+ * Main function.
  *
  * @param {}  should be define later.
  * @return {} should be define later.
@@ -24,10 +24,10 @@ generator.main = function(){
 }
 
 /**
- * For know is it's a natural number.
+ * Generate a password.
  *
- * @param {int, bool, bool} An value that supposed to be a positive int.
- * @return {string} The result of the test.
+ * @param {int, bool, bool} A value supposed to be a positive int.
+ * @return {string} Result of the test.
  */
 generator.Generate = function(nb_car, b_chi, b_crn){
 	var result="";
@@ -66,7 +66,7 @@ generator.Generate = function(nb_car, b_chi, b_crn){
 }
 
 /**
- * For know is it's a natural number.
+ * Test if it's a natural number.
  *
  * @param {int} value An value that supposed to be a positive int.
  * @return {bool} The result of the test.
