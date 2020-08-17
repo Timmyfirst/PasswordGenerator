@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Générer des mots de passe forts en toute simplicité avec notre outil. C'est rapide, gratuit et sans inscription et gratuit.">
+  <meta name="description" content="Générer des mots de passe forts en toute simplicité sur notre site. C'est rapide, gratuit et sans inscription.">
   <meta name="Keywords" content="comment generer un mot de passe fort,
   Comment generer un mot de passe fort,
   comment générer un mot de passe fort,
@@ -51,30 +51,49 @@
   </header>
   <main>
     <article>
-      <section class="centrale">
+      <section id="centrale">
         <center>
-          <h1>Générateur de mot de passe en ligne - Sans inscription</h1>
+          <h2>Générateur de mot de passe en ligne - Sans inscription</h2>
         </center>
-        <div class="parameters">
-          <p>Options :</p>
-          <ul>
-            <li><input type="checkbox" name="chiffre" id="chiffres" value="chi"> Chiffres</li>
-            <li><input type="checkbox" name="carna" id="carnas" value="cna"> Caractères non alphabétiques (ex: !,?,#)<br></li>
-            <li><input type="text" name="nb" id="nb_car" class="nb_input" /><label for="nb"> Nombre de caractères (min 6)</label>
-            </li>
-          </ul>
-          <br><br>
-          <div id="div_btn">
+        <div id="parameters">
+          <div class="param_items">
+            <p>Options :</p>
+            <ul>
+              <li><input type="checkbox" name="chiffre" id="chiffres" value="chi"> Chiffres</li>
+              <li><input type="checkbox" name="carna" id="carnas" value="cna"> Caractères non alphabétiques (ex: !,?,#)<br></li>
+              <li><input type="text" name="nb" id="nb_car" /><label for="nb"> Nombre de caractères (min 6)</label></li>
+            </ul>
+          </div>
+          <div class="param_items">
+            <noscript>
+              <p id="msg_noscript">/!\ ATTENTION: Veuillez activer javascript pour pouvoir utiliser la fonction de génération. /!\</p>
+            </noscript>
             <input type="submit" id="btn_generate" value="Générer" onclick="generator.main()">
+          </div>
+          <div id="result" class="param_items">
+            <center>
+              <label for="result">Résultat :</label>
+              <input type="text" name="result" id="result_inpt" />
+            </center>
           </div>
         </div>
       </section>
-      <section class="result">
+      <section id="info">
         <center>
-          <label for="result">Résultat :</label>
-          <!-- champ dans lequel on récupère le résultat convertit -->
-          <input type="text" name="result" id="result" class="result_input" />
+          <h2>Qu'est-ce qu'un mot de passe fort ?</h2>
         </center>
+        <div id="prg">
+          <div>
+            <p>Pour qu'un mot de passe soit fort il faut :</p>
+              <ul>
+                <li>Qu'il contienne des majuscules et des minuscules ;</li>
+                <li>Qu'il contienne 12 caractères minimum ;</li>
+                <li>Qu'il contienne des caractères spéciaux ;</li>
+                <li>Qu'il ne soit pas un mot qui existe (un mot présent dans le dictionnaire) ;</li>
+              </ul>
+            <p>Un exemple de mot de passe fort : "FerG_hUi6t7!"</p>
+          </div>
+        </div>
       </section>
     </article>
   </main>
