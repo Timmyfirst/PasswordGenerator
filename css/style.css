@@ -54,7 +54,7 @@
     padding: 10px;
   }
 
-  #parameters {
+  #generator {
     margin: 0 auto;
     font-size: 24px;
     display: flex;
@@ -62,11 +62,11 @@
     justify-content: center;
   }
 
-  #parameters ul {
+  #generator ul {
     list-style: none;
   }
 
-  .param_items {
+  .items {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -180,14 +180,21 @@
     padding: 10px;
   }
 
-  #parameters {
+  #generator {
     margin: 0 auto;
     padding: 4vw;
     font-size: 24px;
   }
 
-  #parameters ul {
+  #generator ul {
     list-style: none;
+  }
+
+  .m_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   #nb_car {

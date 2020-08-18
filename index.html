@@ -55,8 +55,8 @@
         <center>
           <h2>Générateur de mot de passe en ligne - Sans inscription</h2>
         </center>
-        <div id="parameters">
-          <div class="param_items">
+        <div id="generator">
+          <div class="items">
             <p>Options :</p>
             <ul>
               <li><input type="checkbox" name="chiffre" id="chiffres" value="chi"> Chiffres</li>
@@ -64,13 +64,13 @@
               <li><input type="text" name="nb" id="nb_car" /><label for="nb"> Nombre de caractères (min 6)</label></li>
             </ul>
           </div>
-          <div class="param_items">
+          <div class="items m_items">
             <noscript>
               <p id="msg_noscript">/!\ ATTENTION: Veuillez activer javascript pour pouvoir utiliser la fonction de génération. /!\</p>
             </noscript>
             <input type="submit" id="btn_generate" value="Générer" onclick="generator.main()">
           </div>
-          <div id="result" class="param_items">
+          <div id="result" class="items m_items">
             <center>
               <label for="result">Résultat :</label>
               <input type="text" name="result" id="result_inpt" />
@@ -89,7 +89,7 @@
                 <li>Qu'il contienne des majuscules et des minuscules ;</li>
                 <li>Qu'il contienne 12 caractères minimum ;</li>
                 <li>Qu'il contienne des caractères spéciaux ;</li>
-                <li>Qu'il ne soit pas un mot qui existe (un mot présent dans le dictionnaire) ;</li>
+                <li>Qu'il ne soit pas un mot qui existe (un mot présent dans le dictionnaire).</li>
               </ul>
             <p>Un exemple de mot de passe fort : "FerG_hUi6t7!"</p>
           </div>
