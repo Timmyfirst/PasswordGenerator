@@ -13,10 +13,8 @@ generator.main = function(){
 			alert('Veuillez renseigner un chiffre ou un nombre supérieur à 5.');
 		}
 		else {
-
-			result = generator.Generate(i, document.getElementById("chiffres").checked == true, document.getElementById("carnas").checked == true)
-
-	  	document.getElementById('result').value = result;
+			result = generator.Generate(i, document.getElementById("chiffres").checked == true, document.getElementById("carnas").checked == true);
+	  	document.getElementById('result_inpt').value = result;
 		}
 	} else {
 		alert('Veuillez renseigner un chiffre ou un nombre supérieur à 5.');
